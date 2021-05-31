@@ -34,8 +34,6 @@ body {
     background-color: #ed2e2e;
     background-image: linear-gradient(-180deg, #ed2e2e, #f5f025);
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     font-size: 7vh; 
