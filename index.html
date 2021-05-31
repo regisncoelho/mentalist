@@ -5,29 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentalista - imersaodev_</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header class="page-header">
-        <h1 class="page-title">Mentalista</h1>
+        <h1 class="page-title">mentalista</h1>
         <h2 class="page-subtitle">Um exercício da aula 3 da imersãodev_ da alura</h2>
     </header>
     <main class="page-content">
-        <p class="game-line"><em lang="en">Doc:"I'm gonna read you thoughts!"</em></p>
-        <p class="game-line">Martin: "Estou pensando em um número de 0 a 10"</p>
-        <fieldset>
-            <legend>Que número Martin está pensando?</legend>
-            <input type="text" name="guess-input" id="guess-input" class="input-game">
-            <input type="button" value="Responder">
+        <div class="game-start">
+            <figure class="figure-game">
+                <figcaption class="game-line01"><em lang="en"><em style="font-weight: 500";></em> I'm gonna read your thoughts!</em></figcaption>
+                <img src="assets/images/thumb_doc.png" height="80px" alt="Desenho cartoon do personagem Doc Brown, do filme 'De Volta para o Futuro'">
+            </figure>
+            <figure class="figure-game">
+                <img src="assets/images/thumb_marty.png" height="80px" alt="Desenho cartoon do personagem Marty McFly, do filme 'De Volta para o Futuro'">
+                <figcaption class="game-line02"><em style="font-weight: 500";></em> Estou pensando em um número de 0 a 10.</figcaption>
+            </figure>
+        </div>
+        <fieldset class="game-fieldset">
+            <label class="label-input" for="guess-input">Em que número Marty está pensando?</label>
+            <input class="guess-input" type="text" name="guess-input" id="guess-input" class="input-game">
+            <input type="button" class="button-answer" value="Responder">
         </fieldset>
-        <div class="result"></div>
-        <figure>
-            <img src="assets/images/what-it-means.gif" width="200px" alt="">
-            <figcaption class="result-text">Do you know what this means? It means that this damn thing doesn't work at all</figcaption>
-        </figure>
-        <figure>
-            <img src="assets/images/great-scott.gif" width="180px" alt="">
-            <figcaption class="result-text">GREAT SCOTT!</figcaption>
-        </figure>
+        <div class="result">
+            <figure class="result01">
+                <img src="assets/images/what-it-means.gif" width="220px" alt="">
+                <figcaption class="result-text01">Meu leitor de mentes não funciona!</figcaption>
+            </figure>
+            <figure class="result02">
+                <img src="assets/images/great-scott.gif" width="160px" alt="">
+                <figcaption class="result-text02">Meu leitor de mentes funciona!</figcaption>
+            </figure>
+        </div>
 
     </main>
 </body>
