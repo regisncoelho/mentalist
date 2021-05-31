@@ -1,0 +1,224 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+
+@font-face {
+    font-family: 'Back to font';
+    src: url(fonts/BTTF.ttf);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background:none;
+     }
+}
+
+body {
+    background-image: url(assets/images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #00225F;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 1em;    
+}
+
+.page-title {
+    font-family: 'Back to font';
+    background-color: #ed2e2e;
+    background-image: linear-gradient(-180deg, #ed2e2e, #f5f025);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 7vh; 
+    margin: 40px 0 5px;
+}
+
+.page-subtitle {
+    font-size: 2.5vh;
+    color: #fff;
+    font-weight: 200;
+    line-height: 2.1w;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-start {
+    background-color: rgb(255, 255, 255, 0.90);
+    font-size: 1.5em;
+    font-weight: 300;
+    width: 50vh;
+    height: fit-content;
+    line-height: 1.3em;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.game-line01 {
+    margin-bottom: 0.1em;
+    width: 60%;
+    padding: 5px;
+    background-color: #81C4E2;
+    position: relative;
+    border: 5px solid #81C4E2;
+    border-radius: 1em;
+}
+
+.game-line01::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    display: block;
+    width: 0;
+    top: 25px;
+    bottom: auto;
+    right: -27px;
+    border-width: 10px 0 10px 25px;
+    border-color: transparent #81C4E2;
+}
+
+.game-line02 {
+    margin-bottom: 0.1em;
+    width: 60%;
+    padding: 5px;
+    background-color: #81C4E2;
+    position: relative;
+    border: 5px solid #81C4E2;
+    border-radius: 1em;
+}
+
+.game-line02::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    display: block;
+    width: 0;
+    top: 25px;
+    bottom: auto;
+    left: -30px;
+    border-width: 10px 25px 10px 0;
+    border-color: transparent #81C4E2;
+}
+
+.figure-game {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.game-fieldset {
+    width: 50vh;
+    height: fit-content;
+    font-size: 1.5em;
+    font-weight: 300;
+    background-color: rgb(255, 255, 255, 0.90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-width: 0;
+    margin-top: 0.5em;
+    border-radius: 1em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.guess-input {
+    margin-top: 10px;
+    padding-left: 5px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.guess-input:focus {
+    border: 3px solid #555;
+}
+
+.button-answer {
+	background:linear-gradient(to top, #f5f025 5%, #ed2e2e 95%);
+    background-color: rgb(255, 255, 255, 0.90);
+    border: 0px inset #2D9CCE;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:inherit;
+	font-size:15px;
+	font-weight:500;
+	padding: 10px;
+	text-decoration:none;
+    min-width: 120px;
+    margin-top: 1em;
+}
+
+.result-text01 {
+    font-size: 1.5em;
+    font-style: italic;
+    background-color: #B50D13;
+    height: fit-content;
+    width:max-content   ;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+}
+
+.result-text02 {
+    font-size: 1.5em;
+    font-style: italic;
+    background-color: #2D9CCE;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.result01 {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.90);
+    border-radius: 10px;
+    padding: 1.2vw;
+    font-weight: 300;
+    width: 50vh;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.result02 {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.90);
+    border-radius: 10px;
+    padding: 1.2vw;
+    font-weight: 300;
+    width: 50vh;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
