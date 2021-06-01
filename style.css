@@ -174,6 +174,10 @@ body {
     text-align: center;
 }
 
+.text-result {
+    font-size: 1.5em;
+}
+
 .result-text01 {
     font-size: 1.5em;
     font-style: italic;
