@@ -156,7 +156,7 @@ body {
     border: 3px solid #555;
 }
 
-.button-answer {
+.button-answer, .button-restart {
 	background:linear-gradient(to top, #f5f025 5%, #ed2e2e 95%);
     background-color: rgb(255, 255, 255, 0.90);
     border: 0px inset #2D9CCE;
@@ -172,15 +172,20 @@ body {
     margin-top: 1em;
 }
 
+.button-restart {
+    display: none;
+}
+
 .result-text01 {
     font-size: 1.5em;
     font-style: italic;
     background-color: #B50D13;
     height: fit-content;
-    width:max-content   ;
+    width: unset;
     border-radius: 10px;
     padding: 8px;
     display: flex;
+    margin-top: 0.5em;
 }
 
 .result-text02 {
@@ -188,13 +193,15 @@ body {
     font-style: italic;
     background-color: #2D9CCE;
     height: fit-content;
-    width: fit-content;
+    width: unset;
     border-radius: 10px;
     padding: 10px;
     display: flex;
+    margin-top: 0.5em;
 }
 
 .result01 {
+    margin-top: 1em;
     display: none;
     flex-direction: column;
     justify-content: space-around;
@@ -209,6 +216,7 @@ body {
 }
 
 .result02 {
+    margin-top: 1em;
     display: none;
     justify-content: center;
     flex-direction: column;
